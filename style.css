@@ -113,14 +113,17 @@ body {
   color: #666;
 }
 
-/* INSTAGRAM */
-.instagram {
-  margin-top: 15px;
+/* ===================== */
+/* SOCIAL MEDIA */
+/* ===================== */
+.social {
   display: flex;
   justify-content: center;
+  gap: 14px;
+  margin-top: 16px;
 }
 
-.instagram a {
+.social-item {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -130,10 +133,19 @@ body {
   text-decoration: none;
   font-size: 13px;
   color: #000;
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.instagram img {
+.social-item img {
   width: 14px;
+  height: 14px;
+}
+
+.social-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 /* FORM */
@@ -161,3 +173,4 @@ body {
   padding: 16px;
   font-size: 14px;
 }
+
